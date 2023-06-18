@@ -8,6 +8,7 @@ const Page = () => {
 
     const [encode, setEncode] = useState("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c");
     const [decode, setDecode] = useState(null);
+    const [secret, setSecret] = useState("");
 
     // var atob = require('atob');
 
@@ -60,7 +61,6 @@ const Page = () => {
                         <hr />
                         <span style={{ padding: '30px', position: 'relative', top: '30px', fontWeight: '100', color: '#d63aff' }}>{decode}</span>
                         <br />
-                        {/* <span style={{padding:'30px', position:'relative', top:'200px', fontWeight:'900', color:'green', fontSize:'x-large'}}> <span> <TaskAltRoundedIcon/> </span> Signature Verified</span> */}
                         {decode ? (<><div className="signature-verified">
                             <span> <span> <TaskAltRoundedIcon /> </span> Signature Verified </span>
                         </div></>) : (<><div className="signature-not-verified">

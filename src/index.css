@@ -128,3 +128,28 @@
   color: white;
   margin-top: 100px;
 }
+
+/* Media */
+
+@media screen and (max-width: 1234px){
+  
+  .encoded, .decoded{
+    width: 300px;
+  }
+  .enco-con, .deco-con{
+    width: 300px;
+  }
+  .enco-con textarea{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+  }
+}
